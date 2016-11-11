@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="1" failures="0" name="TestAlumnos" time="1.94" errors="1" skipped="0">
+<testsuite tests="1" failures="0" name="TestAlumnos" time="1.98" errors="1" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/home/edgar/jdk1.8.0_101/jre/lib/amd64"/>
@@ -61,7 +61,7 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="TestAlumnos" name="hello" time="1.859">
+  <testcase classname="TestAlumnos" name="hello" time="1.89">
     <error message="Unable to execute JPA schema generation create command [create table computadoras (id varchar(255) not null, anio_fab date, marca varchar(255), modelo varchar(255), precio float, tipo varchar(255), vigente bit, primary key (id))]" type="javax.persistence.PersistenceException">javax.persistence.PersistenceException: Unable to execute JPA schema generation create command [create table computadoras (id varchar(255) not null, anio_fab date, marca varchar(255), modelo varchar(255), precio float, tipo varchar(255), vigente bit, primary key (id))]
 	at org.hibernate.jpa.internal.schemagen.GenerationTargetToDatabase.acceptCreateCommands(GenerationTargetToDatabase.java:64)
 	at org.hibernate.jpa.internal.schemagen.JpaSchemaGenerator.doGeneration(JpaSchemaGenerator.java:507)
@@ -121,41 +121,41 @@ Caused by: java.sql.SQLSyntaxErrorException: Table &apos;computadoras&apos; alre
 	at org.hibernate.jpa.internal.schemagen.GenerationTargetToDatabase.acceptCreateCommands(GenerationTargetToDatabase.java:61)
 	... 46 more
 </error>
-    <system-err>nov 10, 2016 7:54:36 PM org.hibernate.ejb.HibernatePersistence logDeprecation
+    <system-err>nov 10, 2016 7:59:50 PM org.hibernate.ejb.HibernatePersistence logDeprecation
 WARN: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
-nov 10, 2016 7:54:36 PM org.hibernate.ejb.HibernatePersistence logDeprecation
+nov 10, 2016 7:59:50 PM org.hibernate.ejb.HibernatePersistence logDeprecation
 WARN: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
-nov 10, 2016 7:54:36 PM org.hibernate.ejb.HibernatePersistence logDeprecation
+nov 10, 2016 7:59:50 PM org.hibernate.ejb.HibernatePersistence logDeprecation
 WARN: HHH015016: Encountered a deprecated javax.persistence.spi.PersistenceProvider [org.hibernate.ejb.HibernatePersistence]; use [org.hibernate.jpa.HibernatePersistenceProvider] instead.
-nov 10, 2016 7:54:36 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
+nov 10, 2016 7:59:50 PM org.hibernate.jpa.internal.util.LogHelper logPersistenceUnitInformation
 INFO: HHH000204: Processing PersistenceUnitInfo [
 	name: HibernateExamen
 	...]
-nov 10, 2016 7:54:36 PM org.hibernate.Version logVersion
+nov 10, 2016 7:59:50 PM org.hibernate.Version logVersion
 INFO: HHH000412: Hibernate Core {4.3.5.Final}
-nov 10, 2016 7:54:36 PM org.hibernate.cfg.Environment &lt;clinit&gt;
+nov 10, 2016 7:59:50 PM org.hibernate.cfg.Environment &lt;clinit&gt;
 INFO: HHH000206: hibernate.properties not found
-nov 10, 2016 7:54:36 PM org.hibernate.cfg.Environment buildBytecodeProvider
+nov 10, 2016 7:59:50 PM org.hibernate.cfg.Environment buildBytecodeProvider
 INFO: HHH000021: Bytecode provider name : javassist
-nov 10, 2016 7:54:36 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager &lt;clinit&gt;
+nov 10, 2016 7:59:50 PM org.hibernate.annotations.common.reflection.java.JavaReflectionManager &lt;clinit&gt;
 INFO: HCANN000001: Hibernate Commons Annotations {4.0.4.Final}
-nov 10, 2016 7:54:36 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+nov 10, 2016 7:59:50 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
 WARN: HHH000402: Using Hibernate built-in connection pool (not for production use!)
 Loading class `com.mysql.jdbc.Driver&apos;. This is deprecated. The new driver class is `com.mysql.cj.jdbc.Driver&apos;. The driver is automatically registered via the SPI and manual loading of the driver class is generally unnecessary.
-nov 10, 2016 7:54:36 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+nov 10, 2016 7:59:50 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH000401: using driver [com.mysql.jdbc.Driver] at URL [jdbc:mysql://localhost:3306/examen?zeroDateTimeBehavior=convertToNull]
-nov 10, 2016 7:54:36 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+nov 10, 2016 7:59:50 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH000046: Connection properties: {user=root, password=****}
-nov 10, 2016 7:54:36 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
+nov 10, 2016 7:59:50 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl buildCreator
 INFO: HHH000006: Autocommit mode: false
-nov 10, 2016 7:54:36 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
+nov 10, 2016 7:59:50 PM org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl configure
 INFO: HHH000115: Hibernate connection pool size: 20 (min=1)
-Thu Nov 10 19:54:36 MST 2016 WARN: Establishing SSL connection without server&apos;s identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn&apos;t set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to &apos;false&apos;. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
-nov 10, 2016 7:54:37 PM org.hibernate.dialect.Dialect &lt;init&gt;
+Thu Nov 10 19:59:50 MST 2016 WARN: Establishing SSL connection without server&apos;s identity verification is not recommended. According to MySQL 5.5.45+, 5.6.26+ and 5.7.6+ requirements SSL connection must be established by default if explicit option isn&apos;t set. For compliance with existing applications not using SSL the verifyServerCertificate property is set to &apos;false&apos;. You need either to explicitly disable SSL by setting useSSL=false, or set useSSL=true and provide truststore for server certificate verification.
+nov 10, 2016 7:59:51 PM org.hibernate.dialect.Dialect &lt;init&gt;
 INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
-nov 10, 2016 7:54:37 PM org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory &lt;init&gt;
+nov 10, 2016 7:59:51 PM org.hibernate.hql.internal.ast.ASTQueryTranslatorFactory &lt;init&gt;
 INFO: HHH000397: Using ASTQueryTranslatorFactory
-nov 10, 2016 7:54:37 PM org.hibernate.dialect.Dialect &lt;init&gt;
+nov 10, 2016 7:59:51 PM org.hibernate.dialect.Dialect &lt;init&gt;
 INFO: HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
 </system-err>
   </testcase>

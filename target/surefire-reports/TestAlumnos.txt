@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestAlumnos
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.939 sec <<< FAILURE!
-hello(TestAlumnos)  Time elapsed: 1.859 sec  <<< ERROR!
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 1.98 sec <<< FAILURE!
+hello(TestAlumnos)  Time elapsed: 1.89 sec  <<< ERROR!
 javax.persistence.PersistenceException: Unable to execute JPA schema generation create command [create table computadoras (id varchar(255) not null, anio_fab date, marca varchar(255), modelo varchar(255), precio float, tipo varchar(255), vigente bit, primary key (id))]
 	at org.hibernate.jpa.internal.schemagen.GenerationTargetToDatabase.acceptCreateCommands(GenerationTargetToDatabase.java:64)
 	at org.hibernate.jpa.internal.schemagen.JpaSchemaGenerator.doGeneration(JpaSchemaGenerator.java:507)
